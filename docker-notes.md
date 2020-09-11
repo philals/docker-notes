@@ -79,7 +79,7 @@ docker push 111111111111.dkr.ecr.us-west-1.amazonaws.com/philtest:latest
 | `docker rmi <image>` |	removes single image	| |
 | `docker rm $(docker kill $(docker ps -aq))` | Kill all containers and removes them	| |
 | `docker ps` | Shows running containers	Also use docker-compose ps
-| `docker run -t -p 8000:8000 image:version` | Run the specified image on the terminal	| |
+| `docker run -t -p 8000:8000 image:version` | Run the specified image on the terminal	|-n names image|
 | `docker run -d -p 8000:8000 image:version` | Run the specified image in the background | |
 | `docker-compose <up/down>` | will run your compose file and keep the terminal open	-d => run as background process |
 | `docker-compose logs` | will show the logs if running in background | |
